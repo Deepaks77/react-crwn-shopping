@@ -57,6 +57,10 @@ class App extends React.Component {
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser,
 });
+
+//mapdispatch means jo hmne define kiye hai koi action trigger krana chahte ho jisse state change ho and state change
+//krne ke liye we have to give object that has type property
+
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });

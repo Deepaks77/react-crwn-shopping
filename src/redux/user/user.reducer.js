@@ -1,4 +1,5 @@
 //it is like we are requesting the state of particular object
+//means jo bhi state based on action set ki hai that will be returned
 import { userActionTypes } from "./user.types";
 const INITIAL_STATE = {
   currentUser: null,
