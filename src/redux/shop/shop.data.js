@@ -1,3 +1,4 @@
+//not used more we have uploaded it on backend firebase
 const SHOP_DATA = {
   hats: {
     id: 1,
