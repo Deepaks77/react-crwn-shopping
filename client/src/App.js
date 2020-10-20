@@ -7,10 +7,10 @@ import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up
 import CheckoutPage from "./pages/checkout/checkout.component";
 
 import Header from "./components/header/header.component.jsx";
-import "./App.css";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 //import store from "./redux/store";
+import { GlobalStyle } from "./global.styles";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import { checkUserSession } from "./redux/user/user.actions";
 const App = ({ checkUserSession, currentUser }) => {
@@ -20,6 +20,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
